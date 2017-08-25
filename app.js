@@ -16,7 +16,6 @@ function addTodo() {
   // clear the input's value
   itemInput.value = '';
 
-  // render the todo
   renderTodoList();
 
   console.log('Hey the function is working!');
@@ -38,7 +37,6 @@ function renderTodoList() {
   itemList.innerHTML = '';
 
   // loop through the storage array and add elements to the page
-
   for (var i = 0; i < items.length; i++) {
 
     var newTodo = document.createElement('li');
@@ -58,17 +56,17 @@ function appendOptionButtons(index, item) {
 
   // functionality to delete the todo
   var deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'X';
-    deleteButton.onclick = function() {
-      removeTodo(index);
-    }
+  deleteButton.innerHTML = 'X';
+  deleteButton.onclick = function() {
+    removeTodo(index);
+  }
 
   // functionality to edit the todo
   var editButton = document.createElement('button');
-    editButton.id = 'edit-item-' + index;
-    editButton.innerHTML = 'Edit';
-    editButton.onclick = function() {
-      addEditField('item-' + (index).toString());
+  editButton.id = 'edit-item-' + index;
+  editButton.innerHTML = 'Edit';
+  editButton.onclick = function() {
+    addEditField('item-' + (index).toString());
   }
 
   // append option buttons to the todo
