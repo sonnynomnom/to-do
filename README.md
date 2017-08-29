@@ -1,4 +1,4 @@
 # To-Do List App
 
-Hack Reactor NYC  
-Code from Scratch Workshop: Build a To-Do App
+Code from Scratch Workshop: Build a To-Do App  
+[Hack Reactor](https://www.hackreactor.com)
